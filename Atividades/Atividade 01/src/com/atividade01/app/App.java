@@ -60,6 +60,7 @@ public class App {
         }   else if(opção != 2){
             System.out.println();
             System.out.printf("opção invalida");
+            break;
         }
     
         
