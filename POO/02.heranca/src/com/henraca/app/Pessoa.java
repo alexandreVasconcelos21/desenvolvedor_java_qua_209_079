@@ -5,7 +5,7 @@ public class Pessoa {
  //atributos
     public String telefone;
     public String email;
-     public String endereco;
+    public String endereco;
 
 
 
