@@ -1,6 +1,6 @@
 package com.regras.app;
 
-import com.regras.model.Conta;
+import com.regras.model.Conta;  
 
 import java.util.Scanner;
 
