@@ -9,7 +9,7 @@ public class App {
 
         Preco preço = new Preco(0, 0);
 
-       String[] opcoes = {"Calcular Gasolina" , "Sair"};
+       String[] opcoes = {"Calcular Combustivel" , "Sair"};
        Object opcao;
 
 
@@ -22,7 +22,7 @@ public class App {
        opcao = JOptionPane.showInputDialog(null, "Escolha a opção desejada!!! ", "Qual é o mais barato??", 
        0, null, opcoes, opcoes[0]);
 
-       if (opcao == "Calcular Gasolina") {
+       if (opcao == "Calcular Combustivel") {
         preço.setPrecoEtanol(Double.parseDouble(JOptionPane.showInputDialog("Informe o Preço do Etanol: ").replace(",", ".")));
         preço.setPrecogasolina(Double.parseDouble(JOptionPane.showInputDialog("Informe o Preço da Gasolina: ").replace(",", ".")));
 
