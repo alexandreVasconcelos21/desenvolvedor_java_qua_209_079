@@ -1,0 +1,41 @@
+ body {
+            background-color: #2e2b2b;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .nav-link {
+            text-shadow: 1px 1px 4px black;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 4px black;
+        }
+
+        .form-control {
+            background-color: #444;
+            border: 1px solid #666;
+            color: white;
+        }
+
+        .form-control::placeholder {
+            color: #ccc;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #ff4d4d, #cc0000);
+            border: none;
+            box-shadow: 2px 2px 5px black;
+            transition: background 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(to right, #cc0000, #ff4d4d);
+        }
+
+        hr{
+            border-color: #cc0000;
+            margin-top: 1rem;
+            margin-bottom: 2rem;}
