@@ -1,0 +1,185 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body com fundo gradiente escuro */
+body {
+  background: linear-gradient(135deg, #2c3e50, #720026);
+  color: #f0e6f6; /* texto claro */
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Título principal */
+h1 {
+  font-size: 3rem;
+  color: #e1bee7; /* lilás claro */
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+/* Linha horizontal */
+hr {
+  width: 60%;
+  border: none;
+  border-bottom: 2px solid #d81b60; /* rosa forte */
+  margin-bottom: 40px;
+}
+
+/* Container principal */
+.main-container {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(216, 27, 96, 0.3);
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 50px;
+}
+
+/* Container interno para form */
+.Container form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Linha dos inputs */
+.input-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Group Bootstrap customizado */
+.input-group {
+  box-shadow: 0 3px 10px rgba(216, 27, 96, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-group:focus-within {
+  box-shadow: 0 5px 15px rgba(216, 27, 96, 0.5);
+}
+
+/* Ícones dentro do input */
+.input-group-text {
+  background-color: #d81b60; /* rosa forte */
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.input-group-text img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* ícone branco */
+}
+
+/* Inputs */
+input[type="text"] {
+  border: none;
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  flex: 1;
+  outline: none;
+  color: #2c3e50; /* texto escuro dentro do input branco */
+}
+
+input::placeholder {
+  color: #a28ca1; /* lilás acinzentado */
+  font-style: italic;
+}
+
+/* Botão */
+button[type="button"] {
+  margin-top: 25px;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.3rem;
+  background: #ff5400; /* laranja vibrante */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 84, 0, 0.5);
+}
+
+button[type="button"]:hover {
+  background: #cc4300;
+  box-shadow: 0 6px 18px rgba(204, 67, 0, 0.7);
+}
+
+/* Tabela IMC */
+.tabela {
+  max-width: 480px;
+  width: 100%;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 15px rgba(216, 27, 96, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabela img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Resultado IMC */
+h3 {
+  font-weight: 600;
+  color: #e1bee7; /* lilás claro */
+  text-align: right;
+}
+
+h4 {
+  text-align: center;
+  font-style: italic;
+  color: #9d7cc8; /* lilás médio */
+  margin-top: 8px;
+}
+
+#result {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff5400; /* laranja vibrante */
+  font-weight: bold;
+  margin-top: 10px;
+}
+#seu-imc-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 15px 25px;
+  border-radius: 12px;
+  color: #f0e6f6;
+  font-weight: 600;
+  font-size: 1.3rem;
+  box-shadow: 0 0 15px rgba(216, 27, 96, 0.7);
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Texto do valor do IMC */
+#seu-imc-container h4 {
+  margin: 8px 0 0 0;
+  font-weight: 700;
+  color: #ff5400; /* laranja vibrante */
+  font-size: 2rem;
+}
+
