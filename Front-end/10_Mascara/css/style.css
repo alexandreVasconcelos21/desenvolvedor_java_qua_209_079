@@ -1,0 +1,103 @@
+/* Fundo degradê preto animado */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: linear-gradient(-45deg, #000000, #1a1a1a, #2b2b2b, #0d0d0d);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Animação do fundo */
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Título */
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+/* Linha */
+hr {
+    width: 70%;
+    border: none;
+    border-top: 2px solid rgba(255, 0, 0, 0.5);
+    margin: 15px 0 30px;
+}
+
+/* Formulário elegante */
+/* Formulário com borda mais grossa */
+form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px 110px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+    width: 380px;
+    backdrop-filter: blur(12px);
+    border: 3px solid rgba(255, 0, 0, 0.6); /* Borda mais grossa */
+}
+
+/* Inputs com bordas mais largas */
+input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    border: 3px solid rgba(255, 255, 255, 0.15); /* Borda mais grossa */
+    border-radius: 12px;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+/* Inputs ao focar com borda mais chamativa */
+input:focus {
+    border: 3px solid #ff1a1a;
+    box-shadow: 0px 0px 15px #ff1a1a;
+    background: rgba(30, 0, 0, 0.8);
+}
+
+/* Botão mais robusto */
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    border: 3px solid #cc0000; /* Borda mais larga */
+    background: linear-gradient(90deg, #cc0000, #ff1a1a);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0px 6px 20px rgba(255, 0, 0, 0.6);
+}
+
+/* Botão hover */
+button:hover {
+    background: linear-gradient(90deg, #ff1a1a, #cc0000);
+    border: 3px solid #ff3333; /* Destaque no hover */
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0px 8px 25px rgba(255, 0, 0, 0.8);
+}
+
+/* Resultado */
+#result {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    color: #ff4d4d;
+    text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.6);
+}
